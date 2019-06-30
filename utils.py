@@ -35,49 +35,49 @@ class Chatbot():
         '', 
         'saludo',
         ['hola', 'hey como estas', 'hay alguien ahí'], 
-        ['hola como estas', 'dime en que puedo ayudarte', 'estoy para servirte', 'en que te puedo ayudar']),
+        ['¿Hola cómo estas?', 'Dime en qué puedo ayudarte.', '¿En qué te puedo ayudar?']),
       QA('', 
         '',
         'descanso',
         ['que es descanso'], 
-        ['despejar tu mente, recargar energias']
+        ['Es una parte fundamental del entrenamiento y acondicionamiento físico, durante el organismo repone el desgaste sufrido en el ejercicio.']
       ),
       QA('',
         '',
         'importancia',
         ['por que debo dormir'], 
-        ['es muy importante para tu salud, puedes tener algunos problemas de salud']),
+        ['Es muy importante para tu salud, o sino podrías tener algunos problemas de salud.']),
       QA('', 
         'presentacion',
         'presentacion',
         ['que eres', 'que haces', 'cual es tu funcion'],
-        ['soy un chatbot programado para ayudarte']),
+        ['Soy un chatbot programado para ayudarte.']),
           QA('presentacion',
             '',
             'ayuda',
             ['ayudarme en que'],
-            ['identificar problemas de descanso']),
+            ['Te ayudo a identificar problemas de descanso.']),
       QA('', 
         '', 
         'agradecimiento',
-        ['gracias', 'muchas gracias', 'gracias por tu ayuda', 'eres el mejor', 'me ayudaste mucho', 'gracias por la informacion'], 
+        ['gracias', 'muchas gracias', 'gracias por tu ayuda', 'eres el mejor', 'me ayudaste mucho', 'gracias por la informacion'],
         ['Feliz de poder ayudarte :).']),
       QA('', 
         '', 
         'despedida',
         ['chau y gracias', 'nos vemos luego', 'hasta pronto', 'adios', 'hasta luego'], 
-        ['hasta pronto', 'nos vemos luego', 'espero haberte sido util']),
+        ['Hasta pronto!', 'Nos vemos luego.', 'Espero haberte sido util.']),
       QA('', 
         '',
         'sueño',
         ['tengo problemas de sueño', 'no duermo bien', 'por que debo dormir'],
-        ['es muy importante para tu salud, puedes tener algunos problemas de salud']
+        ['Es muy importante para tu salud, puedes tener algunos problemas de salud.']
         ),
       QA('', 
         '',
         'enfermedad',
         ['que enfermedades se originan por falta de sueño', 'quiero saber si tengo alguna enfermedad'],
-        ['diabetes, hipertension arterial, obesisdad, depresion, ansiedad', 'dime tus sintomas']),
+        ['Diabetes, hipertensión arterial, obesidad, depresión, ansiedad, entre muchos otros ...']),
       QA('cuestionario', 
         'cuestionario',
         'afirmacion',
@@ -92,7 +92,7 @@ class Chatbot():
         'diabetes',
         'diabetes',
         ['quiero saber si tengo diabetes', 'como se si tengo diabetes', 'tendre diabetes? ayudame'],
-        ['Empezemos por un cuestionario, te parece bien?']),
+        ['Empezemos por un cuestionario, ¿Te parece bien?']),
           QA('diabetes', 
             'cuestionario',
             'cuestionario',
@@ -102,7 +102,7 @@ class Chatbot():
             'no_cuestionario',
             'no_cuestionario',
             ['no', 'claro que no', 'por supuesto que no', 'no quiero', 'detente', 'negativo', 'no me gusta', 'no seria lo mejor', 'no gracias'],
-            ['Ok como gustes, puedes realizarlo cuando quieras.'])
+            ['Como gustes, puedes realizarlo cuando quieras.'])
     ]
 
     self.cuestionario = [
@@ -110,11 +110,12 @@ class Chatbot():
       '¿Sientes más apetito que antes?',
       '¿Tienes fatiga?',
       '¿Tienes visión borrosa?',
-      '¿Te han salido llagas en el cuerpo?',
+      '¿Te han salido llagas que tardan en sanar?',
       '¿Tienes sobrepeso?',
-      '¿Sueles hacer a menudo actividad física?',
-      '¿Sueles hacer a menudo algún deporte?',
-      '¿Tienes zonas oscuras en tu piel?'
+      '¿Duermes de manera inadecuada? (Normal: 7-8 horas)',
+      '¿Realizas poca actividad física?',
+      '¿Tienes familiares que tuvieron diabetes?',
+      '¿Tienes zonas de piel oscurecidas? (axilas y cuello)'
     ]
 
     for qa in self.data:
