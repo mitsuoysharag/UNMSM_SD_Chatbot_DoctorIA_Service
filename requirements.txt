@@ -8,5 +8,5 @@ numpydoc==0.8.0
 request==1.0.2
 requests==2.20.0
 requests-toolbelt==0.7.0
-nltk==3.2.5
+nltk==3.4.5
 tensorflow-gpu==2.0.0-beta
